@@ -4,6 +4,7 @@ import Home from "./components/Home/Home/Home";
 import Appointment from "./components/Appointment/Appointment";
 import Dashboard from "./components/Dashboard/Dashboard/Dashboard";
 import AllPatients from "./components/AllPatients/AllPatients/AllPatients";
+import AddDoctor from "./components/AddDoctor/AddDoctor";
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
         </Route>
         <Route path='/dashboard/allpatients'>
           <AllPatients></AllPatients>
+        </Route>
+        <Route path='/addDoctor'>
+          <AddDoctor></AddDoctor>
         </Route>
       </Switch>
     </Router>

@@ -2,10 +2,16 @@ import React from "react";
 import img from "../../../img/doctor-sm.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
-const Doctor = () => {
+const Doctor = ({ doctor }) => {
   return (
     <div className='col-md-4 text-center'>
-      <img className='img-fluid mb-3' src={img} alt='' />
+      <img
+        style={{ height: "200px" }}
+        className='img-fluid mb-3'
+        src={img}
+        //  http://localhost:5000/${doctor.img}
+        alt=''
+      />
       <h4>Dr. Coudi</h4>
       <p>
         {" "}
